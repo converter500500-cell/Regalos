@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños 🦋🌷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #0b0b14;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+.butterfly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90px;
+  pointer-events: auto; /* 👈 CAMBIAR DE 'none' A 'auto' para poder hacer clic */
+  z-index: 9999;
+  will-change: transform;
+  cursor: pointer; /* Para que sepa que se puede tocar */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Three.js CLÁSICO -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+
+
+  <!-- Tu animación -->
+  <script src="main.js"></script>
+
+
+
+</body>
+</html>
